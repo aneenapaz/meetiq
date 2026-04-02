@@ -49,6 +49,23 @@ MeetIQ is an intelligent meeting analysis platform that automatically extracts s
 ### Installation Steps
 
 1. **Clone the repository**
-```bash
-git clone https://github.com/your-username/meetiq.git
-cd meetiq
+   git clone https://github.com/your-username/meetiq.git
+   cd meetiq
+
+2. **Install dependencies**
+   pip install -r requirements.txt
+
+3. **Set up environment variables**
+   Create a .env file with: GROQ_API_KEY=your_groq_api_key_here
+
+4. **Run the application**
+   streamlit run app.py
+
+5. **Open your browser** to http://localhost:8501
+
+### Usage Guide
+
+1. **Upload Transcripts**: Click New Upload or drag-and-drop .txt or .vtt files
+2. **View Extractions**: See Key Decisions and Action Items with responsible parties and deadlines
+3. **Export Data**: Download action items as CSV
+4. **Ask Questions**: Use Meeting Assistant chatbot for natural language queries
